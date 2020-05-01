@@ -14,3 +14,39 @@ cd source
 ./helloworld
 ./tests
 #+END_SRC
+
+* Aufgabe 1.4
+TODO explain type conversion
+#+BEGIN_SRC cpp
+int main() {
+    // Der Variablen `a` vom Typ `int` (Ganzzahl) wird der Wert `9` zugewiesen.
+    int a = 9;
+
+    // Der Variablen `b` vom Typ `bool` (Boolean) wird der Wert `false` zugewiesen.
+    bool b = false;
+
+    // Der Variablen `d` vom Type `double` (Fließkommazahl) wird der Wert `1.3` zugewiesen.
+    double d = 1.3;
+
+    // Der Konstanten (`const`) namens `five` vom Typ `int` wird der Wert `5` zugewiesen.
+    // D. h. der Wert der Variablen ist immer `5` und nicht veränderbar.[2]
+    int const five = 5;
+
+    // Der Variablen `e` vom Typ `e` wird Wert der Division `a/five`, also `9/5` zugewiesen.
+    // Es wird zunächst die rechte Seite zu `1` evaluiert.  Da beide Operanden Ganzzahlen sind,
+    // findet ein Ganzzahldivision statt[citation needed].  Diese wird dann in ein `double`
+    // konvertiert[1], d. h. `e` nimmt den Wert `1.0` an.
+    double e = a/five;
+
+    // Hier wird der Compiler einen Fehler werden, da `five` eine Konstante ist und nicht verändert
+    // werden kann.[2]
+    five = d;
+
+    return 0;
+}
+#+END_SRC
+
+* Literatur
+[1]:  https://en.cppreference.com/w/cpp/language/operator_arithmetic#Conversions
+
+[2]:  https://en.cppreference.com/w/cpp/language/cv

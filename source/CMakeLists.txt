@@ -2,6 +2,7 @@ add_executable(helloworld helloworld.cpp)
 #target_link_libraries(helloworld my_own_library)
 
 add_executable(tests tests.cpp)
+add_executable(is_prime is_prime.cpp)
 
 # Kommentieren Sie die folgenden Zeilen fuer die Aufgabe `mile_to_kilometer` aus
 

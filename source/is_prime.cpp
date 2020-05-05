@@ -9,8 +9,6 @@
  * Returns true iff p is prime.
  */
 bool is_prime(int p) {
-    return false;
-
     if (p <= 1) return false;
     if (p == 2) return true;
     int upper_limit = std::ceil(std::sqrt(p));

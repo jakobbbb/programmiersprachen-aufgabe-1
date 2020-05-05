@@ -13,7 +13,7 @@ bool is_divisable(int n) {
 }
 
 int get_smallest() {
-    int i = 1;
+    int i = 20;
     while (!is_divisable(i)) {
         // number must be a multiple of 20
         i += 20;

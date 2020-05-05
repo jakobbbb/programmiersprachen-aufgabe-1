@@ -1,4 +1,5 @@
 #+TITLE:  Programmiersprachen:  Aufgabe 1
+#+STARTUP: logdone auto-fill-mode
 
 * Building
 #+BEGIN_SRC sh
@@ -16,7 +17,19 @@ cd source
 #+END_SRC
 
 * Aufgabe 1.4
-TODO explain type conversion
+  Typenkonvertierung:  Auf verschiedene Weisen kann eine Variable von
+  einem Typen in einen anderen umgewandelt werden, wie z.B. im
+  Beispiel unten.  Bei den Elementardatentypen (/built-ins/) fallen
+  ggf. Informationen weg, z.B. bei Konvertierung von =double= nach
+  =float= oder =float= nach =int=.  Eine Konvertierung wie von
+  negativen =int= nach =unsigned= liefert kein brauchbares Ergebnis,
+  da =unsigned= natürlich keine negativen Ganzzahlen darstellen kann.
+
+  Die Typen im Beispiel unten sind alle /built-ins/.  Die /built-ins/
+  (=int=, =bool=, etc.)  sind nicht zu verwechseln mit den
+  Standarddatentypen (=std::*=).  Datentypen bspw. von Klassen sind
+  /zusammengesetzt/.
+
 #+BEGIN_SRC cpp
 int main() {
     // Der Variablen `a` vom Typ `int` (Ganzzahl) wird der Wert `9` zugewiesen.
@@ -34,8 +47,8 @@ int main() {
 
     // Der Variablen `e` vom Typ `e` wird Wert der Division `a/five`, also `9/5` zugewiesen.
     // Es wird zunächst die rechte Seite zu `1` evaluiert.  Da beide Operanden Ganzzahlen sind,
-    // findet ein Ganzzahldivision statt[citation needed].  Diese wird dann in ein `double`
-    // konvertiert[1], d. h. `e` nimmt den Wert `1.0` an.
+    // findet ein Ganzzahldivision statt.  Diese wird dann in ein `double` konvertiert, d.h. `e`
+    // nimmt den Wert `1.0` an.
     double e = a/five;
 
     // Hier wird der Compiler einen Fehler werden, da `five` eine Konstante ist und nicht verändert
@@ -46,6 +59,7 @@ int main() {
 }
 #+END_SRC
 
+* Aufgabe 1.5
 * Literatur
 [1]:  https://en.cppreference.com/w/cpp/language/operator_arithmetic#Conversions
 

@@ -4,8 +4,8 @@
     /C++/ ist eine objektorientierte Programmiersprache, deren
     Entwicklung Ende der 70er Jahre mit /C with Classes/ begann.  Die
     Sprache wird ständig weiterentwickelt, wobei der zukünftige
-    Standard /C++20/ sein wird.  /C++/ bietet eine /"direct map to
-    hardware"/ und /"zero-overhead abstraction"/, eignet sich also
+    Standard /C++20/ sein wird.  /C++/ bietet eine /direct map to
+    hardware/ und /zero-overhead abstraction/, eignet sich also
     besonders gut für performancekritische Anwendungen.
 *** Quellcode
     /Quellcode/ ist menschenlesbarer und i.d.R. auch vom Menschen
@@ -26,16 +26,16 @@
     verfügbar ist, ausgeführt und verwendet werden kann.  Verschiedene
     Betriebssysteme haben verschiedene Formate für Ausführbare
     Binärdateien.
-*** =main()=
-    Die =main=-Funktion ist der Einstiegspunkt in das Programm.  Sie
+*** ~main()~
+    Die ~main~-Funktion ist der Einstiegspunkt in das Programm.  Sie
     kann ggf. Kommandozeilenparameter übergeben bekommen und gibt als
-    =int= einen Exit Code zurück.
-*** =#include=
-    =#include "foo.bar"= ist eine Anweisung für den Präprozessor, die
-    Datei =foo.bar= an dieser Stelle einzufügen.  Die Anweisung wird
+    ~int~ einen Exit Code zurück.
+*** ~#include~
+    ~#include "foo.bar"​~ ist eine Anweisung für den Präprozessor, die
+    Datei ~foo.bar~ an dieser Stelle einzufügen.  Die Anweisung wird
     genutzt, um Header einzubinden.  Header aus auf dem System
-    installierten Bibliotheken werden so eingebunden: =#include
-    <baz>=.
+    installierten Bibliotheken werden so eingebunden:
+    ~#include <baz>~.
 *** Kommentar
     Ein Kommentar wird vom Compiler ignoriert und dient dazu, den Code
     zu dokumentieren.
@@ -55,10 +55,10 @@
     nötig.
 *** Programm
 *** Ausgabe
-*** =std::cout=
-*** =std::cin=
-*** =<<=
-*** =>>=
+*** ~std::cout~
+*** ~std::cin~
+*** ~<<~
+*** ~>>~
 *** Funktion
 *** Funktionssignatur
 *** Deklaration
@@ -70,5 +70,5 @@
 *** Wert
 *** Initialisierung
 *** Zuweisung
-*** =const=
+*** ~const~
 *** Gültigkeitsbereich

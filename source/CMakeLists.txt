@@ -8,3 +8,6 @@ add_executable(is_prime is_prime.cpp)
 
 add_executable(smallest smallest.cpp)
 #add_executable(mile_to_kilometer mile_to_kilometer.cpp)
+
+# generate compile_commands.json
+set( CMAKE_EXPORT_COMPILE_COMMANDS ON )

@@ -1,6 +1,5 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
-#include <cmath>
 #include <iostream>
 
 // 1.10

@@ -9,6 +9,7 @@ add_executable(is_prime is_prime.cpp)
 add_executable(smallest smallest.cpp)
 add_executable(checksum checksum.cpp)
 add_executable(sum_multiples sum_multiples.cpp)
+add_executable(fract fract.cpp)
 
 #add_executable(mile_to_kilometer mile_to_kilometer.cpp)
 

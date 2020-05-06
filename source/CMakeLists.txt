@@ -11,6 +11,7 @@ add_executable(checksum checksum.cpp)
 add_executable(sum_multiples sum_multiples.cpp)
 add_executable(fract fract.cpp)
 add_executable(factorial factorial.cpp)
+add_executable(cylinder cylinder.cpp)
 
 #add_executable(mile_to_kilometer mile_to_kilometer.cpp)
 

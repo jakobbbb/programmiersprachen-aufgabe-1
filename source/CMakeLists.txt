@@ -13,7 +13,7 @@ add_executable(fract fract.cpp)
 add_executable(factorial factorial.cpp)
 add_executable(cylinder cylinder.cpp)
 
-#add_executable(mile_to_kilometer mile_to_kilometer.cpp)
+add_executable(mile_to_kilometer mile_to_kilometer.cpp)
 
 # generate compile_commands.json
 set( CMAKE_EXPORT_COMPILE_COMMANDS ON )

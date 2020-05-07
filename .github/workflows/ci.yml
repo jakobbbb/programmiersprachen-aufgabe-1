@@ -21,12 +21,39 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: build
+    - name: build-all
       run: |
         mkdir build
         cd build
         cmake ..
         make
 
-    - name: test
-      run: for e in `find ./build/source -executable -type f`; do echo "Running $e..." && $e; done
+    - name: test-01-helloworld
+      run: build/source/helloworld
+
+    - name: test-03-smallest
+      run: build/source/smallest
+
+    - name: test-08-tests
+      run: build/source/tests
+
+    - name: test-09-checksum
+      run: build/source/checksum
+
+    - name: test-10-sum_multiples
+      run: build/source/sum_multiples
+
+    - name: test-11-fract
+      run: build/source/fract
+
+    - name: test-12-cylinder
+      run: build/source/cylinder
+
+    - name: test-13-factorial
+      run: build/source/factorial
+
+    - name: test-14-is_prime
+      run: build/source/is_prime
+
+    - name: test-15-mile_to_kilometer
+      run: build/source/mile_to_kilometer <<< 1.95209517 | grep "That's 3.14159 kilometers"

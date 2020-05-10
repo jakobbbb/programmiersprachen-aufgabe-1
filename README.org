@@ -102,10 +102,11 @@ int main() {
 }
   #+END_SRC
 * Aufgabe 1.6
-  |            | *Deklaration*                           | *Definition*                                                 |
+  |            | *Deklaration* der Existenz              | *Definition*                                                 |
   | *Funktion* | ~int is_positive(int);~ Name + Signatur | ~int is_prositive(int n) { return n > 0; }~ Verhalten        |
-  | *Variable* | ~int n;~ Typ + Name                     | ~n = 4;~ Wert                                                |
+  | *Variable* | ~int n;~ Typ + Name                     | ~n = 4;~ Wert + Speicherort                                 |
   | *Datentyp* | ~class Foo;~ Name                       | ~class Foo { public: int bar(); };~ Member werden deklariert |
+  Deklaration und Definition: ~int n = 4;~.
 * Aufgabe 1.7
   Die *Signatur* einer Funktion sind die Typen der Parameter sowie der
   Rückgabetyp.  Variablen sind in dem *Scope* gültig, in dem sie

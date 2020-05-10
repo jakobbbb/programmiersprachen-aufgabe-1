@@ -78,14 +78,11 @@
     die Typen der Parameter einer Funktion bezeichnet.  Die Funktion
     ~int gcd(int a, int b)~ nimmt zwei Integer und gibt einen Integer
     zurück.
-*** Deklaration
-*** Definition
-*** Typ
-*** Typkonvertierung
-*** Variable
-*** Name
-*** Wert
-*** Initialisierung
-*** Zuweisung
-*** ~const~
+*** Typ, Typkonvertierung, ~const~, Variable, Name, Wert
+    Siehe [[https://github.com/jakobbbb/programmiersprachen-aufgabe-1#aufgabe-14][Aufgabe 1.4]].
+*** Initialisierung und Zuweisung
+    Siehe [[https://github.com/jakobbbb/programmiersprachen-aufgabe-1#aufgabe-15][Aufgabe 1.5]].
+*** Deklaration und Definition
+    Siehe [[https://github.com/jakobbbb/programmiersprachen-aufgabe-1#aufgabe-16][Aufgabe 1.6]].
 *** Gültigkeitsbereich
+    Siehe [[https://github.com/jakobbbb/programmiersprachen-aufgabe-1#aufgabe-17][Aufgabe 1.7]].

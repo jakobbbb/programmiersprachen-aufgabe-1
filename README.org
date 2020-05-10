@@ -102,6 +102,10 @@ int main() {
 }
   #+END_SRC
 * Aufgabe 1.6
+  |            | *Deklaration*                           | *Definition*                                                 |
+  | *Funktion* | ~int is_positive(int);~ Name + Signatur | ~int is_prositive(int n) { return n > 0; }~ Verhalten        |
+  | *Variable* | ~int n;~ Typ + Name                     | ~n = 4;~ Wert                                                |
+  | *Datentyp* | ~class Foo;~ Name                       | ~class Foo { public: int bar(); };~ Member werden deklariert |
 * Aufgabe 1.7
 * Literatur
 [1]:  https://en.cppreference.com/w/cpp/language/operator_arithmetic#Conversions

@@ -17,7 +17,7 @@ cd source
 #+END_SRC
 
 * Aufgabe 1.4
-  Typenkonvertierung:  Auf verschiedene Weisen kann eine Variable von
+  *Typenkonvertierung:* Auf verschiedene Weisen kann eine Variable von
   einem Typen in einen anderen umgewandelt werden, wie z.B. im
   Beispiel unten.  Bei den Elementardatentypen (/built-ins/) fallen
   ggf. Informationen weg, z.B. bei Konvertierung von =double= nach
@@ -60,15 +60,17 @@ int main() {
 #+END_SRC
 
 * Aufgabe 1.5
-  Bei einer Initialisierung eines Objektes wird ein neues Objekt =bar=
+  Bei einer *Initialisierung* eines Objektes wird ein neues Objekt =bar=
   aus dem existierenden Objekt =baz= erstellt.  Mögliche Formen sind
   die /direct initialization/ =Foo bar{baz};= und die /copy
   initialization/ =Foo bar = baz;=.  In beiden Fällen wird der
   Copy-Konstruktur von =Foo= verwendet.
-  Die Zuweisung hat die Form =bar = baz;=.  Dem bereits existierenden
-  Objekt =bar= werden die Werte des Objektes =baz= zugewiesen.  /Java/
-  würde für Objekte an dieser Stelle Pointer kopieren, so dass am Ende
-  dieses Beispiels beide Variablen das gleiche Objekt referenzieren:
+
+  Die *Zuweisung* hat die Form =bar = baz;=.  Dem bereits
+  existierenden (!)  Objekt =bar= werden die Werte des Objektes =baz=
+  zugewiesen.  Anders als bei z.B. /Java/ wird hier nicht der Pointer
+  auf das Objekt kopiert
+
   #+BEGIN_SRC cpp
 #include <iostream>
 
@@ -88,7 +90,6 @@ int Foo::n() {
     return n_;
 }
 
-
 int main() {
     Foo a = Foo{};
     Foo b = Foo{};
@@ -100,25 +101,8 @@ int main() {
     std::cout << "a:" << a.n() << " b:" << b.n() << "\n";  // a:4 b:21
 }
   #+END_SRC
-  #+BEGIN_SRC java
-class Foo {
-    private int n = 42;
-    public int n() { return n; }
-    public void n(int a) { this.n = a; }
-
-    public static void main(String[] args) {
-        Foo a = new Foo();
-        Foo b = new Foo();
-        System.out.println("a:" + a.n() + " b:" + b.n());  // a:42 b:42
-        b.n(21);
-        a = b;
-        System.out.println("a:" + a.n() + " b:" + b.n());  // a:21 b:21
-        a.n(4);
-        System.out.println("a:" + a.n() + " b:" + b.n());  // a:4 b:4
-    }
-}
-  #+END_SRC
 * Aufgabe 1.6
+* Aufgabe 1.7
 * Literatur
 [1]:  https://en.cppreference.com/w/cpp/language/operator_arithmetic#Conversions
 

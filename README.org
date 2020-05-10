@@ -107,6 +107,34 @@ int main() {
   | *Variable* | ~int n;~ Typ + Name                     | ~n = 4;~ Wert                                                |
   | *Datentyp* | ~class Foo;~ Name                       | ~class Foo { public: int bar(); };~ Member werden deklariert |
 * Aufgabe 1.7
+  Die *Signatur* einer Funktion sind die Typen der Parameter sowie der
+  Rückgabetyp.  Variablen sind in dem *Scope* gültig, in dem sie
+  deklariert wurden.  Ein Scope wird durch geschweifte Klammern ~{~
+  und ~}~ eingegrenzt.
+  #+BEGIN_SRC cpp
+#include <iostream>
+
+int var = 3;
+
+double sum(double a, double b)
+{
+  return a + b;
+}
+
+int square(int var)
+{
+  return var * var;
+}
+
+int main()
+{
+  for (int i = 0; i != 100; ++i) {
+    std::cout << "i^2 = " << square(i) << '\n';
+    std::cout << "i+i = " << sum(i,i)  << '\n';
+  }
+  return 0;
+}
+  #+END_SRC
 * Literatur
 [1]:  https://en.cppreference.com/w/cpp/language/operator_arithmetic#Conversions
 

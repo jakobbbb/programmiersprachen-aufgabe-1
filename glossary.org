@@ -54,13 +54,30 @@
     wird.  Mit /C++20/-Modulen ist eine solche Trennung nicht mehr
     nötig.
 *** Programm
+    Allgemeiner Begriff, der eine Menge Source-Code und/oder
+    ausführbare Dateien bezeichnet, die i.d.R. einen
+    anwenderorientierten Zweck erfüllen.
 *** Ausgabe
+    Ein Programm gibt Daten über eine Shell, grafische Oberfläche,
+    Datei etc.  an Nutzer oder andere Software weiter.
 *** ~std::cout~
+    Der Standard-Ausgabe-Stream, über den Ausgaben in die Shell
+    gegeben werden.
 *** ~std::cin~
-*** ~<<~
-*** ~>>~
+    Der Standard-Eingabe-Stream, der manuelle Eingaben in die Shell
+    erfasst oder Daten, die per Pipe o.Ä. an das Programm geleitet werden.
+*** ~<<~ und ~>>~
+    Die beiden Operatoren schreiben Strings.  Mit ~std::cout << "A"~
+    wird ein String in den /stdout/ geschrieben, mit ~std::cin >> foo~
+    ein String vom /stdin/ in die Variable ~foo~.
 *** Funktion
+    Eine Funktion ist ein Ablauf von Instruktionen, der ggf. Eingaben
+    bekommt und ggf. eine Ausgabe zurückgibt.
 *** Funktionssignatur
+    Mit der Signator einer Funktion in C++ wird der Rückgabetyp und
+    die Typen der Parameter einer Funktion bezeichnet.  Die Funktion
+    ~int gcd(int a, int b)~ nimmt zwei Integer und gibt einen Integer
+    zurück.
 *** Deklaration
 *** Definition
 *** Typ

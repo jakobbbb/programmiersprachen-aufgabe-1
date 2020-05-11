@@ -64,7 +64,7 @@ int main() {
   aus dem existierenden Objekt =baz= erstellt.  Mögliche Formen sind
   die /direct initialization/ =Foo bar{baz};= und die /copy
   initialization/ =Foo bar = baz;=.  In beiden Fällen wird der
-  Copy-Konstruktur von =Foo= verwendet.
+  Copy-Konstruktor von =Foo= verwendet.
 
   Die *Zuweisung* hat die Form =bar = baz;=.  Dem bereits
   existierenden (!)  Objekt =bar= werden die Werte des Objektes =baz=
@@ -103,7 +103,7 @@ int main() {
   #+END_SRC
 * Aufgabe 1.6
   |            | *Deklaration* der Existenz              | *Definition*                                                 |
-  | *Funktion* | ~int is_positive(int);~ Name + Signatur | ~int is_prositive(int n) { return n > 0; }~ Verhalten        |
+  | *Funktion* | ~int is_positive(int);~ Name + Signatur | ~int is_positive(int n) { return n > 0; }~ Verhalten        |
   | *Variable* | ~int n;~ Typ + Name                     | ~n = 4;~ Wert + Speicherort                                 |
   | *Datentyp* | ~class Foo;~ Name                       | ~class Foo { public: int bar(); };~ Member werden deklariert |
   Deklaration und Definition: ~int n = 4;~.

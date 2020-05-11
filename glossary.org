@@ -13,15 +13,15 @@
     Quellcode eine verschiedene Abstraktion der Hardwareebene dar.
 *** Compiler
     Der /Compiler/ übersetzt den Quellcode in Maschinensprache und
-    stellt sog. /Objectcode/ her.
+    stellt sog. /Objektcode/ her.
 *** Objektcode
-    Der /Objeketcode/ ist der vom Compiler generierte Maschinencode zu
+    Der /Objektcode/ ist der vom Compiler generierte Maschinencode zu
     jeder Quellcode-Datei.
 *** Linker
     Der /Linker/ fügt die Objektdateien in einer einzigen ausführbaren
     Datei zusammen.
 *** Ausführbare Datei
-    Die /Ausfürbare Datei/ ist das Resultat des Linkens.  Sie stellt
+    Die /Ausführbare Datei/ ist das Resultat des Linkens.  Sie stellt
     das fertige Programm dar, das auch ohne, dass der Quellcode
     verfügbar ist, ausgeführt und verwendet werden kann.  Verschiedene
     Betriebssysteme haben verschiedene Formate für Ausführbare
@@ -47,8 +47,8 @@
    mehrere Zeilen. */
     #+END_SRC
 *** Header
-    Eine /Header/-Datei enthählt Methodendeklarationen und
-    Klassendefinitionen (wobei die Membervariablen- und funktionen
+    Eine /Header/-Datei enthält Methodendeklarationen und
+    Klassendefinitionen (wobei die Membervariablen und -funktionen
     deklariert werden).  In Headern werden also Schnittstellen
     festgelegt, deren Ausprägung dann in anderen Dateien implementiert
     wird.  Mit /C++20/-Modulen ist eine solche Trennung nicht mehr
@@ -74,7 +74,7 @@
     Eine Funktion ist ein Ablauf von Instruktionen, der ggf. Eingaben
     bekommt und ggf. eine Ausgabe zurückgibt.
 *** Funktionssignatur
-    Mit der Signator einer Funktion in C++ wird der Rückgabetyp und
+    Mit der Signatur einer Funktion in C++ wird der Rückgabetyp und
     die Typen der Parameter einer Funktion bezeichnet.  Die Funktion
     ~int gcd(int a, int b)~ nimmt zwei Integer und gibt einen Integer
     zurück.

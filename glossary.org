@@ -67,7 +67,7 @@
     Der Standard-Eingabe-Stream, der manuelle Eingaben in die Shell
     erfasst oder Daten, die per Pipe o.Ä. an das Programm geleitet werden.
 *** ~<<~ und ~>>~
-    Die beiden Operatoren schreiben Strings.  Mit ~std::cout << "A"~
+    Die beiden Operatoren schreiben Strings.  Mit ~std::cout << "A"​~
     wird ein String in den /stdout/ geschrieben, mit ~std::cin >> foo~
     ein String vom /stdin/ in die Variable ~foo~.
 *** Funktion
